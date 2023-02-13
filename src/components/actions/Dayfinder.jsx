@@ -10,7 +10,8 @@ const Dayfinder = () => {
   let [show, setShow] = useState(false);
   let [fillform, setFillform] = useState(true);
 
-  const calculateDay = () => {
+  const calculateDay = (e) => {
+    e.preventDefault();
     if (date.length > 0 && month.length > 0 && year.length > 0) {
       const d = new Date(`${month}/${date}/${year}`);
       const daysOfWeek = [
