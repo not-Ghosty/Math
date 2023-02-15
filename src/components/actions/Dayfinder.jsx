@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import a from "../main.module.css";
-import imga from "../images/strong.png";
 const Dayfinder = () => {
   const [date, setDate] = useState("");
   const [month, setMonth] = useState("");
@@ -10,7 +9,8 @@ const Dayfinder = () => {
   let [show, setShow] = useState(false);
   let [fillform, setFillform] = useState(true);
 
-  const calculateDay = () => {
+  const calculateDay = (e) => {
+    e.preventDefault();
     if (date.length > 0 && month.length > 0 && year.length > 0) {
       const d = new Date(`${month}/${date}/${year}`);
       const daysOfWeek = [
