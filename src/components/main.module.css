@@ -90,6 +90,7 @@
   background-color: #000000;
   display: inline-block;
   width: 200px;
+  border-radius: 30px;
 }
 #day_div h4 {
   display: inline-block;
@@ -100,7 +101,9 @@
   background-color: #298d8f;
   text-decoration: none;
   border: none;
+  border-radius: 30px;
   text-align: center;
+  padding-bottom: 2px;
   font-weight: 600;
   padding-top: 3px;
   transition: 0.15s;
