@@ -60,7 +60,7 @@ const Perfect = () => {
           </strong>
           .
         </p>
-        <img src={imga} alt="" />
+        <img id={a.perfect_img} src={imga} alt="" />
       </div>
       <div className={a.gap}> </div>
       <form className={a.action_div}>
