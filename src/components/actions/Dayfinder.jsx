@@ -86,7 +86,7 @@ const Dayfinder = () => {
         <br />
         {fillform ? <></> : <>Type a number</>} <br />
         <div className={a.ans_div}>
-          <span>{show ? <></> : <span>{day && <p>{day}</p>}</span>}</span>
+          <span>{show ? <></> : <span> {day && <p>{day}</p>}</span>}</span>
         </div>
       </form>
       <div className={a.gap}> </div>
